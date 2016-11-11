@@ -1,0 +1,9 @@
+<h1>Edit Coffee</h1>
+
+<form action="/coffees/<%=@coffee.id%>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" value="<%=@coffee.name%>" name="name">
+  <input type="text" value="<%=@coffee.farm%>" name="farm">
+  <input type="integer" value="<%=@coffee.pounds%>" name="pounds">
+  <input type="submit" value="submit">
+</form>

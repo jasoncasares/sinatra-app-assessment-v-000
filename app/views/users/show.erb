@@ -1,0 +1,6 @@
+<p> Your coffees, <%= @user.username %></p>
+<% @user.coffees.each do |coffee| %>
+    <li><%= coffee.name %></li>
+    <li><%= coffee.farm %></li>
+    <li><%= coffee.pounds %></li>
+<% end %>

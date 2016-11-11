@@ -1,0 +1,10 @@
+<p><%= @coffee.name %></p>
+<p><%= @coffee.farm %></p>
+<p><%= @coffee.pounds %></p>
+
+<form action="/coffees/<%=@coffee.id%>/delete" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
+
+<a href="/coffees/<%=@coffee.id%>/edit">Edit Coffee</a>

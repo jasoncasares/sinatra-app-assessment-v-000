@@ -1,0 +1,10 @@
+<p> Welcome <%= current_user.username %>
+<h1>All Coffees:</h1>
+
+<% @coffees.each do |coffee| %>
+  <div>
+    <h3><%= coffee.name %></h3>
+    <p><%= coffee.farm %></p>
+    <p><%= coffee.pounds %></p>
+  </div>
+<% end %>
